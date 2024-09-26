@@ -1,9 +1,9 @@
-import Exam from "src/Pages/Exam/Exam";
-import Practice from "src/Pages/Practice/Index";
-import Roadmap from "src/Pages/RoadMap/Index";
-import Setting from "src/Pages/Setting/Index";
-import Upgrade from "src/Pages/Upgrade/Index";
-import { IRouterConfig } from "src/type/common";
+import Exam from "../Pages/Exam/Exam.tsx";
+import Practice from "../Pages/Practice/";
+import Roadmap from "../Pages/RoadMap";
+import Setting from "../Pages/Setting";
+import Upgrade from "../Pages/Upgrade";
+import { IRouterConfig } from "../type/common.ts";
 
 const routes: IRouterConfig[] = [
   {

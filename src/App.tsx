@@ -1,6 +1,6 @@
 import { Navigate, Route, Routes } from "react-router-dom";
 import { IRouterConfig } from "src/type/common";
-import "./App.css";
+import "./index.css";
 import Sidebar from "./components/Sidebar";
 import routes from "./router/routes";
 function App() {
