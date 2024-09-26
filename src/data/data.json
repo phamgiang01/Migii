@@ -1,0 +1,41 @@
+{
+  "practiceBox": [
+    {
+      "title": "Nghe hiểu",
+      "icon": "faHeadphones",
+      "color": "text-orange-300"
+    },
+    {
+      "title": "Đọc hiểu",
+      "icon": "faBookOpen",
+      "color": "text-lime-300"
+    },
+    {
+      "title": "AI - Viết",
+      "icon": "faPencil",
+      "color": "text-sky-600"
+    }
+  ],
+  "practiceExam": [
+    {
+      "title": "Thi thử online",
+      "icon": "faBookOpen"
+    },
+    {
+      "title": "Thi thử",
+      "icon": "faBookOpen"
+    },
+    {
+      "title": "Bao đỗ",
+      "icon": "faBookOpen"
+    },
+    {
+      "title": "Lý thuyết",
+      "icon": "faBookOpen"
+    },
+    {
+      "title": "HSKK",
+      "icon": "faBookOpen"
+    }
+  ]
+}
