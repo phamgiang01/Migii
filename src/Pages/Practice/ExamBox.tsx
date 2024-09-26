@@ -10,14 +10,19 @@ const ExamBox: React.FC<IExamBox> = ({ children, title, progress = false }) => {
     height: "5px",
     borderRadius: "8px",
     width: "100%",
+    marginTop: "10px",
   };
   return (
-    <div className="flex flex-col justify-center item-center">
-      <div className="flex flex-col justify-center items-center cursor-pointer p-3 border rounded-lg shadow-md bg-white">
-        {children}
+    <div className="flex flex-col justify-start item-center w-20">
+      <div className="flex flex-col justify-center items-center cursor-pointer p-3 border rounded-lg shadow-md bg-white w-20">
+        {progress ? (
+          <div className="bg-slate-200 rounded-2xl p-2">{children}</div>
+        ) : (
+          <>{children}</>
+        )}
         {progress ? <span style={styleProgress}></span> : <></>}
       </div>
-      <span className="mt-1">{title}</span>
+      <p className="mt-1 text-center">{title}</p>
     </div>
   );
 };

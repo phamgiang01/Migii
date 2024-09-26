@@ -37,5 +37,32 @@
       "title": "HSKK",
       "icon": "faBookOpen"
     }
+  ],
+  "practicePropose": [
+    {
+      "title": "Chọn câu sai",
+      "icon": "faPencil",
+      "color": "text-slate-400"
+    },
+    {
+      "title": "Hội thoại",
+      "icon": "faPencil",
+      "color": "text-slate-400"
+    },
+    {
+      "title": "Tóm tắt đoạn văn",
+      "icon": "faPencil",
+      "color": "text-slate-400"
+    },
+    {
+      "title": "Đoạn văn dài",
+      "icon": "faPencil",
+      "color": "text-slate-400"
+    },
+    {
+      "title": "Điền vào chỗ trống",
+      "icon": "faPencil",
+      "color": "text-slate-400"
+    }
   ]
 }
