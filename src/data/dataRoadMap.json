@@ -1,0 +1,43 @@
+{
+  "mockRoadMap" : [
+    {
+      "examDay": "Ngày 1",
+      "title": "Bài thi thử số 1",
+      "isSpecial": true,
+      "process": 20
+    },
+    {
+      "examDay": "Ngày 12-22",
+      "title": "Bài thi thử số 1",
+      "target": "Mục tiêu 21 điểm",
+      "process": 30
+    },
+    {
+      "examDay": "Ngày 23-24",
+      "title": "Bài thi thử số 1",
+      "isSpecial": true,
+      "process": 76
+    },
+    {
+      "examDay": "Ngày 25-30",
+      "title": "Bài thi thử số 1",
+      "target": "Mục tiêu 21 điểm",
+      "process": 50
+    },
+    {
+      "examDay": "Ngày 1",
+      "title": "Bài thi thử số 1"
+    },
+    {
+      "examDay": "Ngày 1",
+      "title": "Bài thi thử số 1",
+      "target": "Mục tiêu 21 điểm",
+      "isSpecial": true
+    },
+    {
+      "examDay": "Ngày 1",
+      "title": "Bài thi thử số 1",
+      "process": 100
+    }
+  ]
+}

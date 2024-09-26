@@ -3,17 +3,17 @@
     {
       "title": "Nghe hiểu",
       "icon": "faHeadphones",
-      "color": "text-orange-300"
+      "color": "#ECFEFF"
     },
     {
       "title": "Đọc hiểu",
       "icon": "faBookOpen",
-      "color": "text-lime-300"
+      "color": "#A7F3D0"
     },
     {
       "title": "AI - Viết",
       "icon": "faPencil",
-      "color": "text-sky-600"
+      "color": "#0369A1"
     }
   ],
   "practiceExam": [

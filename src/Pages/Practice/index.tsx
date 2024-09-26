@@ -1,13 +1,20 @@
+
+import {useState} from "react";
 import data from '../../data/data.json'
+
 import PracticeBox from "./PracticeBox";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {
   faBookOpen,
   faHeadphones,
   faPencil,
 } from "@fortawesome/free-solid-svg-icons";
 import ExamBox from "./ExamBox";
-import { useState } from "react";
+import Banner from "../../components/Banner.tsx";
+import BannerPractice from "./BannerPractice.tsx";
+
+
+
 const Index = () => {
   const listBox = data.practiceBox;
   const listExam = data.practiceExam;
@@ -16,23 +23,29 @@ const Index = () => {
     faHeadphones: faHeadphones,
     faBookOpen: faBookOpen,
     faPencil: faPencil,
-    // Thêm các biểu tượng khác nếu cần
   };
-
+  
   const [historyActive, setHistoryActive] = useState(false);
   return (
     <div id="practice">
+      <Banner title='ÔN THI NHẸ NHÀNG <br/> ĐIỂM CAO DỄ DÀNG'/>
+      
+      <BannerPractice/>
       <div className="practice pt-5">
         <h2 className="font-medium">Luyện tập</h2>
         <div className="list-practice-box flex flex-wrap justify-around gap-3 mt-5">
-          {listBox.map((box) => (
-            <PracticeBox title={box.title} key={box.title}>
-              <FontAwesomeIcon
-                icon={iconMapping[box.icon]}
-                className={`text-3xl ${box.color}`}
-              />
-            </PracticeBox>
-          ))}
+          {listBox.map((box) => {
+              return (
+                <PracticeBox title={box.title} key={box.title}>
+                  <FontAwesomeIcon
+                    icon={iconMapping[box.icon]}
+                    color={box.color}
+                    className='text-3xl'
+                  />
+                </PracticeBox>
+              )
+            }
+          )}
         </div>
       </div>
       <div className="exam mt-10">
