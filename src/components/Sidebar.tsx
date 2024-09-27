@@ -12,7 +12,9 @@ const Sidebar = () => {
   return (
     <nav className="bg-teal-500 text-white p-4">
       <div className="container mx-auto flex justify-between">
-        <div className="text-2xl font-bold">Migii</div>
+        <Link to="/" className="text-2xl font-bold cursor-pointer">
+          Migii
+        </Link>
 
         <ul className="flex space-x-5">
           <li className="flex items-center">

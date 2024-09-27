@@ -1,17 +1,11 @@
 import React from "react";
+import Progress from "src/components/Progress";
 interface IExamBox {
   title: string;
   children: React.ReactNode;
-  progress: boolean;
+  progress?: boolean;
 }
 const ExamBox: React.FC<IExamBox> = ({ children, title, progress = false }) => {
-  const styleProgress = {
-    backgroundColor: "rgb(226 232 240)",
-    height: "5px",
-    borderRadius: "8px",
-    width: "100%",
-    marginTop: "10px",
-  };
   return (
     <div className="flex flex-col justify-start item-center w-20">
       <div className="flex flex-col justify-center items-center cursor-pointer p-3 border rounded-lg shadow-md bg-white w-20">
@@ -20,7 +14,7 @@ const ExamBox: React.FC<IExamBox> = ({ children, title, progress = false }) => {
         ) : (
           <>{children}</>
         )}
-        {progress ? <span style={styleProgress}></span> : <></>}
+        {progress ? <Progress /> : <></>}
       </div>
       <p className="mt-1 text-center">{title}</p>
     </div>

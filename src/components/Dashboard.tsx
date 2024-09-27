@@ -1,22 +1,16 @@
-
-import {useState} from "react";
-import data from '../../data/data.json'
-
-import PracticeBox from "./PracticeBox";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import data from "../data/data.json";
 import {
   faBookOpen,
   faHeadphones,
   faPencil,
 } from "@fortawesome/free-solid-svg-icons";
-import ExamBox from "./ExamBox";
-import Banner from "../../components/Banner.tsx";
-import BannerPractice from "./BannerPractice.tsx";
+import Banner from "./Banner";
+import BannerPractice from "src/Pages/Practice/BannerPractice";
+import ExamBox from "src/Pages/Practice/ExamBox";
 
-
-
-const Index = () => {
-  const listBox = data.practiceBox;
+const Dashboard = () => {
   const listExam = data.practiceExam;
   const listPropose = data.practicePropose;
   const iconMapping = {
@@ -24,30 +18,14 @@ const Index = () => {
     faBookOpen: faBookOpen,
     faPencil: faPencil,
   };
-  
+
   const [historyActive, setHistoryActive] = useState(false);
   return (
     <div id="practice">
-      <Banner title='ÔN THI NHẸ NHÀNG <br/> ĐIỂM CAO DỄ DÀNG'/>
-      
-      <BannerPractice/>
-      <div className="practice pt-5">
-        <h2 className="font-medium">Luyện tập</h2>
-        <div className="list-practice-box flex flex-wrap justify-around gap-3 mt-5">
-          {listBox.map((box) => {
-              return (
-                <PracticeBox title={box.title} key={box.title}>
-                  <FontAwesomeIcon
-                    icon={iconMapping[box.icon]}
-                    color={box.color}
-                    className='text-3xl'
-                  />
-                </PracticeBox>
-              )
-            }
-          )}
-        </div>
-      </div>
+      <Banner title="ÔN THI NHẸ NHÀNG <br/> ĐIỂM CAO DỄ DÀNG" />
+
+      <BannerPractice />
+
       <div className="exam mt-10">
         <h2 className="font-medium">Luyện thi</h2>
         <div className="list-exam-box flex flex-wrap justify-around mt-5 gap-2">
@@ -102,4 +80,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default Dashboard;
