@@ -5,6 +5,7 @@ import Roadmap from "../Pages/RoadMap/Index.tsx";
 import Setting from "../Pages/Setting/Index.tsx";
 import Upgrade from "../Pages/Upgrade/Index.tsx";
 import { IRouterConfig } from "../type/common.ts";
+import Test from "src/Pages/Exam/Test.tsx";
 
 const routes: IRouterConfig[] = [
   {
@@ -24,6 +25,12 @@ const routes: IRouterConfig[] = [
     key: "exam",
     route: "exam",
     component: <Exam />,
+  },
+  {
+    name: "test",
+    key: "test",
+    route: "exam/test/:id",
+    component: <Test />,
   },
   {
     name: "roadmap",

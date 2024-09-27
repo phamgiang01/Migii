@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import data from "../data/data.json";
+import data from "../data/dataPractice.json";
 import {
   faBookOpen,
   faHeadphones,

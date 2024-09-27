@@ -6,7 +6,7 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
 import { EPractice } from "src/type/practice";
-import data from "../../data/data.json";
+import data from "../../data/dataPractice.json";
 import PracticeBox from "./PracticeBox";
 import Lesson from "./Lesson";
 const PracticeDetail = () => {

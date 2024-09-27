@@ -1,0 +1,82 @@
+{
+  "examBox": [
+    {
+      "id": 1,
+      "title": "HSK 1",
+      "description": "Cho người mới bắt đầu",
+      "quantity": 100
+    },
+    {
+      "id": 2,
+      "title": "HSK 2",
+      "description": "Tiếng Trung cơ bản",
+      "quantity": 100
+    },
+    {
+      "id": 3,
+      "title": "HSK 3",
+      "description": "Tiếng Trung trung cấp",
+      "quantity": 80
+    },
+    {
+      "id": 4,
+      "title": "HSK 4",
+      "description": "Bạn là dân chuyên",
+      "quantity": 60
+    },
+    {
+      "id": 5,
+      "title": "HSK 5",
+      "description": "HSK chuyên sâu",
+      "quantity": 60
+    },
+    {
+      "id": 6,
+      "title": "HSK 6",
+      "description": "Bậc thầy HSK",
+      "quantity": 60
+    }
+  ],
+  "tests": [
+    {
+      "title": "Đề thi số 1",
+      "time": 100,
+      "totalPoint": 120
+    },
+    {
+      "title": "Đề thi số 2",
+      "time": 60,
+      "totalPoint": 90
+    },
+    {
+      "title": "Đề thi số 3",
+      "time": 100,
+      "totalPoint": 100
+    },
+    {
+      "title": "Đề thi số 4",
+      "time": 100,
+      "totalPoint": 120
+    },
+    {
+      "title": "Đề thi số 5",
+      "time": 100,
+      "totalPoint": 120
+    },
+    {
+      "title": "Đề thi số 6",
+      "time": 100,
+      "totalPoint": 120
+    },
+    {
+      "title": "Đề thi số 7",
+      "time": 100,
+      "totalPoint": 120
+    },
+    {
+      "title": "Đề thi số 8",
+      "time": 100,
+      "totalPoint": 120
+    }
+  ]
+}
