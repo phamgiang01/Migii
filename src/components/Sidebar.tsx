@@ -1,12 +1,4 @@
-import {
-  faCircleUp,
-  faClock,
-  faGear,
-  faLocationDot,
-} from "@fortawesome/free-solid-svg-icons";
-import { faHome } from "@fortawesome/free-solid-svg-icons/faHome";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Link } from "react-router-dom";
+import {Link} from "react-router-dom";
 
 const Sidebar = () => {
   return (
@@ -16,53 +8,53 @@ const Sidebar = () => {
           Migii
         </Link>
 
-        <ul className="flex space-x-5">
-          <li className="flex items-center">
-            <Link to="/practice" className="hover:text-slate-700">
-              <FontAwesomeIcon
-                icon={faHome}
-                className="block sm:hidden text-2xl"
-              />
-              <span className="hidden sm:block">Luyện tập</span>
-            </Link>
-          </li>
-          <li className="flex items-center">
-            <Link to="/exam" className="hover:text-slate-700">
-              <FontAwesomeIcon
-                icon={faClock}
-                className="block sm:hidden text-2xl"
-              />
-              <span className="hidden sm:block">Thi</span>
-            </Link>
-          </li>
-          <li className="flex items-center">
-            <Link to="/roadmap" className="hover:text-slate-700">
-              <FontAwesomeIcon
-                icon={faLocationDot}
-                className="block sm:hidden text-2xl"
-              />
-              <span className="hidden sm:block">Lộ trình</span>
-            </Link>
-          </li>
-          <li className="flex items-center">
-            <Link to="/upgrade" className="hover:text-slate-700">
-              <FontAwesomeIcon
-                icon={faCircleUp}
-                className="block sm:hidden text-2xl"
-              />
-              <span className="hidden sm:block">Nâng cấp</span>
-            </Link>
-          </li>
-          <li className="flex items-center">
-            <Link to="/setting" className="hover:text-slate-700">
-              <FontAwesomeIcon
-                icon={faGear}
-                className="block sm:hidden text-2xl"
-              />
-              <span className="hidden sm:block">Cài đặt</span>
-            </Link>
-          </li>
-        </ul>
+        {/*<ul className="flex space-x-5">*/}
+        {/*  <li className="flex items-center">*/}
+        {/*    <Link to="/practice" className="hover:text-slate-700">*/}
+        {/*      <FontAwesomeIcon*/}
+        {/*        icon={faHome}*/}
+        {/*        className="block sm:hidden text-2xl"*/}
+        {/*      />*/}
+        {/*      <span className="hidden sm:block">Luyện tập</span>*/}
+        {/*    </Link>*/}
+        {/*  </li>*/}
+        {/*  <li className="flex items-center">*/}
+        {/*    <Link to="/exam" className="hover:text-slate-700">*/}
+        {/*      <FontAwesomeIcon*/}
+        {/*        icon={faClock}*/}
+        {/*        className="block sm:hidden text-2xl"*/}
+        {/*      />*/}
+        {/*      <span className="hidden sm:block">Thi</span>*/}
+        {/*    </Link>*/}
+        {/*  </li>*/}
+        {/*  <li className="flex items-center">*/}
+        {/*    <Link to="/roadmap" className="hover:text-slate-700">*/}
+        {/*      <FontAwesomeIcon*/}
+        {/*        icon={faLocationDot}*/}
+        {/*        className="block sm:hidden text-2xl"*/}
+        {/*      />*/}
+        {/*      <span className="hidden sm:block">Lộ trình</span>*/}
+        {/*    </Link>*/}
+        {/*  </li>*/}
+        {/*  <li className="flex items-center">*/}
+        {/*    <Link to="/upgrade" className="hover:text-slate-700">*/}
+        {/*      <FontAwesomeIcon*/}
+        {/*        icon={faCircleUp}*/}
+        {/*        className="block sm:hidden text-2xl"*/}
+        {/*      />*/}
+        {/*      <span className="hidden sm:block">Nâng cấp</span>*/}
+        {/*    </Link>*/}
+        {/*  </li>*/}
+        {/*  <li className="flex items-center">*/}
+        {/*    <Link to="/setting" className="hover:text-slate-700">*/}
+        {/*      <FontAwesomeIcon*/}
+        {/*        icon={faGear}*/}
+        {/*        className="block sm:hidden text-2xl"*/}
+        {/*      />*/}
+        {/*      <span className="hidden sm:block">Cài đặt</span>*/}
+        {/*    </Link>*/}
+        {/*  </li>*/}
+        {/*</ul>*/}
       </div>
     </nav>
   );

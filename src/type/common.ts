@@ -13,3 +13,10 @@ export interface IRoadMap {
   isSpecial?: boolean,
   process?: number
 }
+
+export interface IQuestion {
+  id: number,
+  content: string,
+  images: string[],
+  answerCorrect: string
+}

@@ -7,8 +7,8 @@ import {
   faPencil,
 } from "@fortawesome/free-solid-svg-icons";
 import Banner from "./Banner";
-import BannerPractice from "src/Pages/Practice/BannerPractice";
-import ExamBox from "src/Pages/Practice/ExamBox";
+import BannerPractice from "../Pages/Practice/BannerPractice.tsx";
+import ExamBox from "../Pages/Practice/ExamBox.tsx";
 
 const Dashboard = () => {
   const listExam = data.practiceExam;
@@ -25,7 +25,6 @@ const Dashboard = () => {
       <Banner title="ÔN THI NHẸ NHÀNG <br/> ĐIỂM CAO DỄ DÀNG" />
 
       <BannerPractice />
-
       <div className="exam mt-10">
         <h2 className="font-medium">Luyện thi</h2>
         <div className="list-exam-box flex flex-wrap justify-around mt-5 gap-2">

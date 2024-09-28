@@ -1,0 +1,1 @@
+export const answers = ['A', 'B', 'C', 'D', 'E']

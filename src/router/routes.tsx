@@ -1,11 +1,13 @@
-import Dashboard from "src/components/Dashboard.tsx";
+import Dashboard from "../components/Dashboard.tsx";
 import Exam from "../Pages/Exam/Exam.tsx";
 import Practice from "../Pages/Practice/Practice.tsx";
 import Roadmap from "../Pages/RoadMap/Index.tsx";
 import Setting from "../Pages/Setting/Index.tsx";
 import Upgrade from "../Pages/Upgrade/Index.tsx";
+import Question from "../Pages/Question";
+import Test from "../Pages/Exam/Test.tsx";
+
 import { IRouterConfig } from "../type/common.ts";
-import Test from "src/Pages/Exam/Test.tsx";
 
 const routes: IRouterConfig[] = [
   {
@@ -49,6 +51,13 @@ const routes: IRouterConfig[] = [
     key: "upgrade",
     route: "upgrade",
     component: <Upgrade />,
+  },
+  
+  {
+    name: "question",
+    key: "question",
+    route: "question",
+    component: <Question />,
   },
 ];
 export default routes;

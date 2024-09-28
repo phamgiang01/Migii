@@ -5,10 +5,10 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
-import { EPractice } from "src/type/practice";
 import data from "../../data/dataPractice.json";
 import PracticeBox from "./PracticeBox";
 import Lesson from "./Lesson";
+import {EPractice} from "../../type/practice.ts";
 const PracticeDetail = () => {
   const listBox = data.practiceBox;
 
@@ -33,7 +33,7 @@ const PracticeDetail = () => {
                 key={box.title}
                 active={box.type == practiceActive}
                 type={box.type}
-                onClick={(type) => setPracticeActive(type)}
+                onClick={(type) => setPracticeActive(type as EPractice )}
               >
                 <FontAwesomeIcon
                   icon={iconMapping[box.icon]}
@@ -56,11 +56,13 @@ const PracticeDetail = () => {
       <div className="lesson">
         {dataPractice.lesson.map((l, index) => (
           <Lesson
+            key={index}
             part={index + 1}
             title={l.title}
             success={l.success}
             total={l.total}
             isLock={l.isLock}
+            isListening={practiceActive === EPractice.LISTEN}
           />
         ))}
       </div>

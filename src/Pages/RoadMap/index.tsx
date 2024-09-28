@@ -3,6 +3,7 @@ import mockDataRoadMap from '../../data/dataRoadMap.json';
 import RoadMapItem from "./RoadMapItem.tsx";
 import {getColorProcess} from "../../helper";
 import Banner from "../../components/Banner.tsx";
+import Button from "../../components/Button.tsx";
 
 
 const Roadmap = () => {
@@ -11,7 +12,12 @@ const Roadmap = () => {
   return (
     <>
       <Banner title='ÔN THI NHÀN HẠ <br/> ĐIỂM CAO VỮNG CHẮC!'/>
-      <h3 className='my-[60px] text-2xl font-bold'>Tiến trình tập luyện</h3>
+      <div className='flex items-center justify-between'>
+        <h3 className='my-[60px] text-2xl font-bold'>Tiến trình tập luyện</h3>
+        <span>
+          <Button>Start</Button>
+        </span>
+      </div>
       <span className='flex w-[150px] mb-[50px] select-none'>
         <CircularProgressbar value={process} text={`${process}%`} strokeWidth={15} styles={buildStyles({
           textSize: '16px',
