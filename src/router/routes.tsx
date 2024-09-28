@@ -3,7 +3,6 @@ import Exam from "../Pages/Exam/Exam.tsx";
 import Practice from "../Pages/Practice/Practice.tsx";
 import Roadmap from "../Pages/RoadMap/Index.tsx";
 import Setting from "../Pages/Setting/Index.tsx";
-import Upgrade from "../Pages/Upgrade/Index.tsx";
 import Question from "../Pages/Question";
 import Test from "../Pages/Exam/Test.tsx";
 
@@ -46,13 +45,6 @@ const routes: IRouterConfig[] = [
     route: "setting",
     component: <Setting />,
   },
-  {
-    name: "upgrade",
-    key: "upgrade",
-    route: "upgrade",
-    component: <Upgrade />,
-  },
-  
   {
     name: "question",
     key: "question",

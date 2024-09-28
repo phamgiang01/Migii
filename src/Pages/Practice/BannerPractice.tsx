@@ -10,7 +10,7 @@ const BannerPractice = () => {
         <Button onClick={() => {navigate('/practice')}} value='Luyện tập'/>
         <Button onClick={() => {navigate('/exam')}} value='Thi'/>
         <Button onClick={() => {navigate('/roadmap')}} value='Lộ trình'/>
-        <Button onClick={() => {navigate('/upgrade')}} value='Nâng cấp'/>
+        <Button onClick={() => {}} value='Nâng cấp'/>
       </div>
       
       <h4 className='text-[26px] font-medium text-center mb-10'>BẠN CÓ MẮC NHỮNG TƯ DUY SAI LẦM NÀY?</h4>

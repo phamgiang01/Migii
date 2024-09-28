@@ -1,4 +1,4 @@
-import dataExam from "src/data/dataExam.json";
+import dataExam from "../..//data/dataExam.json";
 import ExamItem from "./ExamItem";
 const Exam = () => {
   const data = dataExam.examBox;

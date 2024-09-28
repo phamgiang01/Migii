@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import dataExam from "src/data/dataExam.json";
+import dataExam from "../..//data/dataExam.json";
 import TestItem from "./TestItem";
 const Test = () => {
   const tests = dataExam.tests;
